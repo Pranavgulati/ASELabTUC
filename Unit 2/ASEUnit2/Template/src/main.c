@@ -24,7 +24,7 @@ void main(void)
     PIT_StartTimer(0);
     PIT_StartTimer(1);
     speedMsgPacket.standardId=75; 
-dataPacket.standardId=2; 
+	dataPacket.standardId=2; 
     speedMessageStatus=ENABLE;
     /* forever */
     for(;;)

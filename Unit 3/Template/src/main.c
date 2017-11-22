@@ -1,7 +1,18 @@
 #include "init.h"
+//COPIED FROM CAN.C both should have the same copy but somehow main.h doesnt work
+
+typedef struct{
+    int standardId;
+    unsigned double data; //4 bytes of data is supported 
+    int dataLength;
+}txMsgPacket;
+typedef unsigned char byte;
+
 /********************************************************************
 *                          global variables                         *
 ********************************************************************/
+
+txMsgPacket packet1,packet2,packet3;
 
 /********************************************************************
 *                    _____  ___  ___   ___                          *
@@ -19,6 +30,21 @@ void main(void)
 {
     /* board initialization */
     Init();
+    PIT_ConfigureTimer(0,100);
+    PIT_ConfigureTimer(1,200);
+    PIT_StartTimer(0);
+    PIT_StartTimer(1);
+    /********************************************************************
+    *                    _____  ___  ___   ___                          *
+    *                   |_   _|/ _ \|   \ / _ \                         *
+    *                     | | | (_) | |) | (_) |                        *
+    *                     |_|  \___/|___/ \___/                         *
+    *                                                                   *
+    * Assign the message ID's to the corresponding packets here         *
+    ********************************************************************/  
+    packet1.standardId=75; 
+    packet2.standardId=2; 
+    packet3.standardId=2; 
 
     /* turn off leds */
     LED0 = 1;
@@ -68,6 +94,12 @@ void PITCHANNEL1(void)
 {
     /* your own code above! */
     PIT.CH[1].TFLG.B.TIF = 1;
+}
+
+void PITCHANNEL2(void)
+{
+    /* your own code above! */
+    PIT.CH[2].TFLG.B.TIF = 1;
 }
 
 void CANMB0003(void)
@@ -142,6 +174,10 @@ void Ext_Isr() {
             break;
         case 60:
             PITCHANNEL1();
+            break;
+        case 61:
+            PITCHANNEL2();
+            break;
         case 68:
             CANMB0003();
             break;

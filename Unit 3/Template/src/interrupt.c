@@ -12,6 +12,8 @@ void InterruptInit()
     INTC.PSR[59].B.PRI = 0x5;
     /* interrupt priority register PIT */
     INTC.PSR[60].B.PRI = 0x5;
+    /* interrupt priority register PIT */
+    INTC.PSR[61].B.PRI = 0x5;
     // interrupt priority register CAN MB 0-3
     INTC.PSR[68].B.PRI = 0x1;
     // interrupt priority register CAN MB 4-7

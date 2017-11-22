@@ -41,4 +41,6 @@ void PIT_Init(void)
   PIT_ChannelInit(0);
   /* Initialize timer 1 */
   PIT_ChannelInit(1);
+  /* Initialize timer 1 */
+  PIT_ChannelInit(2);
 }
