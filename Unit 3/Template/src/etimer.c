@@ -16,7 +16,7 @@ void eTimerInit()
     // count repeatedly
     ETIMER_0.CHANNEL[0].CTRL.B.ONCE = 0;
     // use compare registers
-    ETIMER_0.CHANNEL[0].CTRL.B.LENGTH = 1;
+    ETIMER_0.CHANNEL[0].CTRL.B.LENGTH = 0;
     // count up
     ETIMER_0.CHANNEL[0].CTRL.B.DIR = 0;
     ETIMER_0.CHANNEL[0].CTRL.B.SECSRC = 0b11000;

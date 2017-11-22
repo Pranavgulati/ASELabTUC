@@ -5,14 +5,14 @@ typedef struct{
     int standardId;
     unsigned double data; //4 bytes of data is supported 
     int dataLength;
-}txMsgPacket;
+}msgPacket;
 typedef unsigned char byte;
 
 /********************************************************************
 *                          global variables                         *
 ********************************************************************/
 
-txMsgPacket packet1,packet2,packet3;
+msgPacket packet1,packet2,packet3;
 
 /********************************************************************
 *                    _____  ___  ___   ___                          *
@@ -112,6 +112,11 @@ void CANMB0003(void)
     CAN_0.IFRL.B.BUF03I = 1;
 }
 
+void onMessageReceived(msgPacket inMsgPacket){
+//use the inMsgPacket to do the intended function with the packet
+
+}
+
 void CANMB0407(void)
 {
     /********************************************************************
@@ -126,7 +131,21 @@ void CANMB0407(void)
     * CAN_0.RXFIFO.DATA.B[i]: value of data byte 'i'                    *
     * IMPORTANT: check for the flag in CAN_0.IFRL.B.BUF05I first!       *
     ********************************************************************/  
-   
+   if(CAN_0.IFRL.B.BUF05I==1){
+         LED5=~LED5;
+        //read the fifo from this interrupt 
+        msgPacket inputMsgPacket;
+        inputMsgPacket.data=0;//init
+        inputMsgPacket.standardId=CAN_0.RXFIFO.ID.B.STD_ID;
+        inputMsgPacket.dataLength=CAN_0.RXFIFO.CS.B.LENGTH;
+        for(int i=inputMsgPacket.dataLength; i>0;i--){
+            //doesnt enter if dataLength is zero
+            inputMsgPacket.data|=(CAN_0.BUF[messageBufferNo].DATA.B[i-1]);
+            inputMsgPacket.data=inputMsgPacket.data<<8;
+        }
+        onMessageReceived(inputMsgPacket);
+    }
+    LED6=~LED6;
     /* end of own code! */
     /* clear flags as last step here! */
     /* don't change anything below! */
@@ -177,6 +196,9 @@ void Ext_Isr() {
             break;
         case 61:
             PITCHANNEL2();
+            break;
+        case 157:
+            ETIMER_00();//timer 0 channel 0 interrupt
             break;
         case 68:
             CANMB0003();

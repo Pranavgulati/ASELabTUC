@@ -21,7 +21,7 @@ void Init(void)
     ADCInit();
     /* initialize CAN */
     CANInit();
-    
+    eTimerInit();
     /* enable external interrupts */
     asm("wrteei 1");
 }

@@ -128,11 +128,6 @@ void FLEXCAN_BUF_04_07(){
 }
 
 void FLEXCAN_BUF_08_11(){
-		
-	if(CAN_0.IFRL.B.BUF09I==1){
-		//clearing the interrupt flag after working with it 
-		CAN_0.IFRL.B.BUF09I=1;
-	}
     CAN_0.IFRL.B.BUF09I=1;
     CAN_0.IFRL.B.BUF08I=1;
 	CAN_0.IFRL.B.BUF10I=1;
@@ -170,7 +165,10 @@ void Ext_Isr() {
 			PITCHANNEL1();
 			break;
 		case 60:
-			PITCHANNEL1();
+			PITCHANNEL2();
+			break;
+		case 157:
+			eTimer_00();//timer 0 channel 0 interrupt
 			break;
 		case 68:
 			FLEXCAN_BUF_00_03();

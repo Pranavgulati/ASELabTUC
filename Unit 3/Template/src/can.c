@@ -4,11 +4,11 @@ typedef struct{
     int standardId;
     unsigned double data; //4 bytes of data is supported 
     int dataLength;
-}txMsgPacket;
+}msgPacket;
 typedef unsigned char byte;
 
 
-void CAN_Write(int messageBufferNo,txMsgPacket inputMsgPacket){
+void CAN_Write(int messageBufferNo,msgPacket inputMsgPacket){
     /* Standard format */
     CAN_0.BUF[messageBufferNo].CS.B.IDE =0;
     /* SRR */
