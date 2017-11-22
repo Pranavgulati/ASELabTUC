@@ -176,7 +176,18 @@ void CANMB1215(void)
     CAN_0.IFRL.B.BUF15I = 1;
 }
 
+void ETIMER_00(){
+    //interrupt freq = (F_CPU)/65536; since prescaler is 1
+    if(ETIMER_0.CHANNEL[0].STS.B.TOF==1||ETIMER_0.CHANNEL[0].STS.B.TCF==1||ETIMER_0.CHANNEL[0].STS.B.TCF1==1||ETIMER_0.CHANNEL[0].STS.B.TCF2==1){
+        //overflow to 0xFFFF has happened
 
+    }
+    //clear all timer interrupts
+ETIMER_0.CHANNEL[0].STS.B.TOF=1;
+ETIMER_0.CHANNEL[0].STS.B.TCF=1;
+ETIMER_0.CHANNEL[0].STS.B.TCF2=1;
+ETIMER_0.CHANNEL[0].STS.B.TCF1=1;
+}
 
 /********************************************************************
  *                   Interrupt Vector Table                         *
@@ -198,7 +209,7 @@ void Ext_Isr() {
             PITCHANNEL2();
             break;
         case 157:
-            ETIMER_00();//timer 0 channel 0 interrupt
+            ETIMER_00();//timer 0 channel 0 interrupt interrupt freq= (F_CPU)/0xFFFF
             break;
         case 68:
             CANMB0003();

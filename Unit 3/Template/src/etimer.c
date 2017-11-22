@@ -12,11 +12,21 @@ void eTimerInit()
     // count rising edges
     ETIMER_0.CHANNEL[0].CTRL.B.CNTMODE = 1;
     // source: IPBus Prescaler 1
+    /* prescaler values
+    	2 	0b11001
+    	4	0b11010
+    	8	0b11011
+    	16	0b11100
+    	32	0b11101
+    	64	0b11110
+    	128 0b11111
+	*
+    */
     ETIMER_0.CHANNEL[0].CTRL.B.PRISRC = 0b11000;
     // count repeatedly
     ETIMER_0.CHANNEL[0].CTRL.B.ONCE = 0;
     // use compare registers
-    ETIMER_0.CHANNEL[0].CTRL.B.LENGTH = 0;
+    ETIMER_0.CHANNEL[0].CTRL.B.LENGTH = 1;
     // count up
     ETIMER_0.CHANNEL[0].CTRL.B.DIR = 0;
     ETIMER_0.CHANNEL[0].CTRL.B.SECSRC = 0b11000;
