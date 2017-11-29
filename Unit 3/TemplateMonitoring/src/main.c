@@ -34,6 +34,12 @@ msgPacket errorPacket;
 #define LEFT_DOOR 0
 #define RIGHT_DOOR 1
 
+#define FUELLEVEL_ID 0x401
+#define COOLANT_ID 0x501
+#define COOL_THRESH 922
+#define FUEL_THRESH 102
+#define ECU1_ALIVE 0x204
+
 /********************************************************************
 *                    _____  ___  ___   ___                          *
 *                   |_   _|/ _ \|   \ / _ \                         *
@@ -50,8 +56,6 @@ void main(void)
 {
     /* board initialization */
     Init();
-    showData(ADC_0.CDR[2].B.CDATA);//light sensor
-    showData(ADC_0.CDR[4].B.CDATA);//potentiometer
     PIT_ConfigureTimer(0,100);
     PIT_ConfigureTimer(1,200);
     PIT_StartTimer(0);
@@ -178,11 +182,7 @@ void CANMB0003(void)
     CAN_0.IFRL.B.BUF02I = 1;
     CAN_0.IFRL.B.BUF03I = 1;
 }
-#define FUELLEVEL_ID 0x401
-#define COOLANT_ID 0x501
-#define COOL_THRESH 922
-#define FUEL_THRESH 102
-#define ECU1_ALIVE 0x204
+
 
 void onMessageReceived(msgPacket inMsgPacket){
 //use the inMsgPacket to do the intended function with the packet
