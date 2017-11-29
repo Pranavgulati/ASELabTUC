@@ -1,0 +1,591 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Tc",
+				"TCF1"
+			],
+			[
+				"T",
+				"TCF2"
+			],
+			[
+				"da",
+				"data"
+			],
+			[
+				"data",
+				"dataLength"
+			],
+			[
+				"speed",
+				"speedMessagesStatus"
+			],
+			[
+				"Buf",
+				"BUFFER_SIZE"
+			],
+			[
+				"b",
+				"buffer"
+			],
+			[
+				"default",
+				"defaultSerialHandler"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/main.c",
+			"settings":
+			{
+				"buffer_size": 8098,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/jdp.h",
+			"settings":
+			{
+				"buffer_size": 264693,
+				"encoding": "Western (Windows 1252)",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/can.c",
+			"settings":
+			{
+				"buffer_size": 6319,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/ASEUnit2/Template/src/main.c",
+			"settings":
+			{
+				"buffer_size": 4874,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/etimer.c",
+			"settings":
+			{
+				"buffer_size": 1199,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/init.c",
+			"settings":
+			{
+				"buffer_size": 631,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/interrupt.c",
+			"settings":
+			{
+				"buffer_size": 785,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/pit.c",
+			"settings":
+			{
+				"buffer_size": 1048,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/adc.c",
+			"settings":
+			{
+				"buffer_size": 677,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 3/Template/src/etimer.h",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 3/Template/src/can.c",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/ASEUnit2/Template/src/can.c",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 3/Template/src/typedefs.h",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 3/Template/src/siu.c",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 3/Template/src/me.c",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 3/Template/src/jdp.h",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 3/Template/src/bam_init.c",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 3/Template/src/romcopy.c",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/ASEUnit2/Template/src/typedefs.h",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/ASEUnit2/Template/src/siu.c",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/ASEUnit2/Template/src/pit.c",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/ASEUnit2/Template/src/main.h",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/ASEUnit2/Template/src/main.c",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/ASEUnit2/Template/src/jdp.h",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/ASEUnit2/Template/src/interrupt.c",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/ASEUnit2/Template/src/init.c",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/ASEUnit2/Template/src/spc560p_io.h",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/ASEUnit2/Template/src/me.c",
+		"/C/Users/Pranav/Desktop/TUC/Lab for Emb Sys/RaspNet/main.c",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/Template/src/init.c",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/Template/src/can.c",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/Template/src/siu.c",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/Template/src/pit.c",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/Template/src/me.c",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/Template/src/main.c",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/Template/src/spc560p_io.h",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/Template/src/interrupt.c",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 1/Template/src/main.c",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/Template/src/interrupt.h",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/Template/src/init.h",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/Template/src/me.h",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/Template/src/pit.h",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/Template/src/can.h",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/Template/src/bam_init.c",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/Template/src/adc.h",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/Template/src/adc.c",
+		"/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/Template/src/siu.h",
+		"/C/Users/Pranav/Desktop/TUC/Lab for Emb Sys/RaspNet/makefile",
+		"/C/Users/Pranav/Desktop/TUC/Lab for Emb Sys/RaspNet/libraries/main.h",
+		"/C/Users/Pranav/Desktop/TUC/Lab for Emb Sys/RaspNet/libraries/serial.c",
+		"/C/Users/Pranav/Desktop/TUC/Lab for Emb Sys/RaspNet/libraries/serial.h"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ETIMER_tag",
+			"Etimer",
+			"ETIMER_CHANNEL_tag",
+			"ETIMER_tag",
+			"Etimer_0",
+			"etime\nETIMER_0"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8098,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6410,
+								6410
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2430.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/jdp.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 264693,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								111408,
+								111418
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 53488.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/can.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6319,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								918,
+								611
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Pranav/Desktop/TUC/ASE/Unit 2/ASEUnit2/Template/src/main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4874,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4598,
+								4532
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2250.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/etimer.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1199,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								478,
+								478
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 225.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/init.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 631,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								571,
+								571
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/interrupt.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 785,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								473,
+								473
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/pit.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1048,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								720,
+								720
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/adc.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 677,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								485,
+								485
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ASEunit3.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
